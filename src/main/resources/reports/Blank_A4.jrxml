@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.9.0.final using JasperReports Library version 6.9.0-cb8f9004be492ccc537180b49c026951f4220bf3  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="95e48000-4853-459a-b08d-d0dae8c9ee80">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="nombrePaciente" class="java.lang.String"/>
+	<parameter name="fechaActual" class="java.lang.String"/>
+	<parameter name="ooad" class="java.lang.String"/>
+	<parameter name="curpPaciente" class="java.lang.String"/>
+	<parameter name="consultorio" class="java.lang.String"/>
+	<parameter name="servicio" class="java.lang.String"/>
+	<parameter name="turno" class="java.lang.String"/>
+	<parameter name="cvePtal" class="java.lang.String"/>
+	<parameter name="nombreTrabajadorLogin" class="java.lang.String"/>
+	<parameter name="matriculaTrabajadorLogin" class="java.lang.String"/>
+	<parameter name="citaDiaSemana" class="java.lang.String"/>
+	<parameter name="aMedico" class="java.lang.String"/>
+	<parameter name="citas" class="java.lang.String"/>
+	<parameter name="fechaInicio" class="java.lang.String"/>
+	<queryString language="JSON">
+		<![CDATA[]]>
+	</queryString>
+	<field name="cveCita" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="cveCita"/>
+		<fieldDescription><![CDATA[cveCita]]></fieldDescription>
+	</field>
+	<field name="cveCalendarioAnual" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="cveCalendarioAnual"/>
+		<fieldDescription><![CDATA[cveCalendarioAnual]]></fieldDescription>
+	</field>
+	<field name="nss" class="java.lang.Long">
+		<property name="net.sf.jasperreports.json.field.expression" value="nss"/>
+		<fieldDescription><![CDATA[nss]]></fieldDescription>
+	</field>
+	<field name="descripcionServicio" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="descripcionServicio"/>
+		<fieldDescription><![CDATA[descripcionServicio]]></fieldDescription>
+	</field>
+	<field name="grupoPrograma" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="grupoPrograma"/>
+		<fieldDescription><![CDATA[grupoPrograma]]></fieldDescription>
+	</field>
+	<field name="duracion" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="duracion"/>
+		<fieldDescription><![CDATA[duracion]]></fieldDescription>
+	</field>
+	<field name="ubicacion" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ubicacion"/>
+		<fieldDescription><![CDATA[ubicacion]]></fieldDescription>
+	</field>
+	<field name="trabajadorSocial" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="trabajadorSocial"/>
+		<fieldDescription><![CDATA[trabajadorSocial]]></fieldDescription>
+	</field>
+	<field name="unidadMedica" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="unidadMedica"/>
+		<fieldDescription><![CDATA[unidadMedica]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="direccion"/>
+		<fieldDescription><![CDATA[direccion]]></fieldDescription>
+	</field>
+	<field name="turno" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="turno"/>
+		<fieldDescription><![CDATA[turno]]></fieldDescription>
+	</field>
+	<field name="ocasionServicio" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ocasionServicio"/>
+		<fieldDescription><![CDATA[ocasionServicio]]></fieldDescription>
+	</field>
+	<field name="modalidad" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="modalidad"/>
+		<fieldDescription><![CDATA[modalidad]]></fieldDescription>
+	</field>
+	<field name="tipoCita" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="tipoCita"/>
+		<fieldDescription><![CDATA[tipoCita]]></fieldDescription>
+	</field>
+	<field name="activo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="activo"/>
+		<fieldDescription><![CDATA[activo]]></fieldDescription>
+	</field>
+	<field name="participante" class="java.util.List">
+		<property name="net.sf.jasperreports.json.field.expression" value="participante"/>
+		<fieldDescription><![CDATA[participante]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="190" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="60" width="275" height="20" uuid="86513532-e55e-4a89-9a43-8f36754dea00"/>
+				<textElement textAlignment="Center" markup="styled">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">CITA(S) TRABAJO SOCIAL</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="275" height="27" uuid="fb54cc55-e6d5-4a67-9168-5b145983a231"/>
+				<textElement textAlignment="Center" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">INFORMACIÓN CONFIDENCIAL</style>]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="275" y="0" width="280" height="130" uuid="f520f9c6-3df4-412c-8f7a-cd85d51f4969"/>
+				<graphicElement>
+					<pen lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="149" width="555" height="14" uuid="68236b1f-50a3-4cc6-9301-b0e36516d7d4"/>
+				<graphicElement>
+					<pen lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="163" width="555" height="14" uuid="3afd99cc-c186-4fb3-9b8d-a323feefc473"/>
+				<graphicElement>
+					<pen lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="1" y="149" width="554" height="14" uuid="dc5464d9-7ce4-4959-98e7-0c1b6ead0cb8"/>
+				<textElement textAlignment="Center" markup="styled">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Fecha y hora</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="1" y="163" width="554" height="14" uuid="a9f4b781-bc55-489f-a5cf-849d3cbb89ad"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{fechaActual}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="0" width="31" height="20" uuid="590763e5-d067-499c-a4af-e677383355be"/>
+				<textElement textAlignment="Left" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">NSS:</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="311" y="0" width="102" height="20" uuid="38f964da-d1f4-49f3-88d1-c541f86c0d89">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dedb96aa-06ac-43de-b06f-d603fd68c15a"/>
+				</reportElement>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nss}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="20" width="265" height="17" uuid="5cf1f379-f0d5-472d-b5a7-ed3811dfcd37">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">NOMBRE DEL PACIENTE</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="60" width="34" height="16" uuid="d214b72f-8b8d-4386-8bd8-7d6f1ba4298a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">OOAD:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="76" width="40" height="16" uuid="47c506d4-f1bb-4382-befc-552c6c309fe1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">UNIDAD:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="92" width="71" height="16" uuid="fcbe9d50-2c21-4f43-a646-36ab7c5e4aa8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">CONSULTORIO:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="108" width="48" height="16" uuid="a4617cc3-40d0-49cd-8b0d-ee8cb7e8f551">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">SERVICIO:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="60" width="30" height="16" uuid="f582050a-451d-4af9-9e41-285161f12548">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">CURP:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="76" width="50" height="16" uuid="d080242e-137b-456f-9c66-e7e5643b6212">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">CVE PTAL:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="92" width="37" height="16" uuid="4643ee21-d091-4b6b-8521-31475ccf7fc2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">TURNO:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="413" y="0" width="52" height="20" uuid="f17eb830-2c94-447d-9510-5fad03810914"/>
+				<textElement textAlignment="Left" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">A MÉDICO:</style>]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="5" width="229" height="35" uuid="832a7711-8dd4-4225-85d3-9bb31417e932"/>
+				<imageExpression><![CDATA["src/main/resources/reports/img/imss.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="20" y="40" width="229" height="1" uuid="dbb9a202-a27d-4824-aaa1-408d4d49d20a"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="40" width="275" height="20" uuid="fb0a8d81-2806-41ed-8740-c8d23dc20038"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN DE PRESTACIONES MÉDICAS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="37" width="265" height="23" uuid="8fe40e0f-5f99-4962-a67f-2fd6dce98a76">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nombrePaciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="314" y="60" width="106" height="16" uuid="82d582f6-b8fc-454a-bb1c-ef7f9323206c"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ooad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="60" width="95" height="16" uuid="34ba41ad-e86b-4e49-87ed-ba3f0ba33bfe"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{curpPaciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="76" width="75" height="16" uuid="fa55851e-8f8b-4ff6-824c-a07a6da20b8f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cvePtal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="457" y="92" width="88" height="16" uuid="bd931eb7-da57-4407-8d27-1ecdacea08b6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{turno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="351" y="92" width="69" height="16" uuid="8b861d6c-651c-4903-b0f5-87248f113dff">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{consultorio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="76" width="100" height="16" uuid="7a31cc11-0809-4af9-9e82-fd752a2b21a9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="39c2a1d2-de5c-48cc-b00e-c8ef2fd79c69"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unidadMedica}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="0" width="80" height="20" uuid="a2c8d6a6-bccc-402f-b6b6-9d465a1e1780"/>
+				<textElement>
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aMedico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="328" y="108" width="92" height="16" uuid="0bae1c38-92ea-4069-872f-fd06820df3b2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcionServicio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="390">
+			<rectangle>
+				<reportElement x="1" y="0" width="553" height="338" uuid="55f8d1b8-9c05-4767-bd8c-f96d7832a40b"/>
+				<graphicElement>
+					<pen lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<textField>
+				<reportElement x="311" y="57" width="238" height="17" uuid="92eeae54-9dbc-44ec-8448-0ac7293ae6f1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e6efae43-e174-458b-8d3c-49e2fcacc61b"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ubicacion}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="74" width="70" height="17" uuid="aa6d49e8-f20c-4ccb-bddd-e2c31f380a59">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Fecha de inicio:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="91" width="51" height="17" uuid="db300072-074f-466a-9b3f-342502f1db6c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Modalidad:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="57" width="31" height="17" uuid="d5b0c114-fb68-4206-85e6-4311fb235585">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Lugar:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="74" width="56" height="17" uuid="75ad5e07-69f8-4b34-9329-3c2bb83c46d8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Profesional:</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="328" y="6" width="221" height="17" uuid="2f101bad-9583-458e-9ede-1c5eea79beb5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8c1cd44e-b8b5-414d-b942-ffd6e95fb420"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="40" width="238" height="17" uuid="e6998f3b-0f0d-409a-95f9-9c3e635c3358">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="228546ba-1854-47dc-a275-efe1fb2f286d"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{turno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="63" y="74" width="217" height="17" uuid="9d1cbaa7-00d3-476f-996b-4cd518a454af">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e681ca4c-9037-403d-82a8-75643b71c1ab"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{trabajadorSocial}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="6" width="48" height="17" uuid="c3f7e625-2447-4756-a536-88616fd40452">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Dirección:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="40" width="31" height="17" uuid="78d5d5e6-31ee-4176-8465-84b6e3e6bb2a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Turno:</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="43" y="6" width="237" height="17" uuid="ce732ced-5e6b-4d59-a3a5-ce1199f63ca3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="39c2a1d2-de5c-48cc-b00e-c8ef2fd79c69"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{unidadMedica}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="6" width="36" height="17" uuid="19c19b08-d0c8-42fe-b56d-032f90511b36">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Unidad:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="40" width="42" height="17" uuid="b5dc58e0-3cf0-48b8-9578-94d7b8c66ef5">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Servicio:</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="40" y="57" width="240" height="17" uuid="a1a271d2-17b3-4d5e-a859-47392126a2b4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2f9ade18-0a2e-4426-92c2-74eb79455f44"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{grupoPrograma}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="57" width="33" height="17" uuid="ca150700-ea98-494a-bbf8-bb027e737375">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Grupo:</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="336" y="23" width="213" height="17" uuid="9f24705b-d117-478a-8572-ec7a23cc43a9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b77ef867-6bf1-4bea-aac5-a739f9f175af"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoCita}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="23" width="56" height="17" uuid="32ec6d0f-f02e-4690-82a7-36f73157fa1f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Tipo de cita:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="23" width="92" height="17" uuid="6adb1afc-bf0b-4373-8a91-10126f6697ea"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Ocasión de servicio:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="260" y="370" width="158" height="20" uuid="6210d61a-78e3-4fd7-9bf0-86fc5802c932">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Modalidad:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="49" y="40" width="231" height="17" uuid="67457d0f-da99-4a00-af0b-28fa23cdafc2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d21dffe-048d-46df-a05d-bc65d340da71"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{descripcionServicio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="99" y="23" width="181" height="17" uuid="ee0fa13e-f38c-40e1-9b2d-17a6bb5a12a7"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ocasionServicio}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="1" y="338" width="553" height="51" uuid="9026872f-9b6e-4f8a-893b-4ee17cc3fea2"/>
+				<graphicElement>
+					<pen lineStyle="Solid"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="7" y="343" width="23" height="20" uuid="7462786d-d64c-4eae-a193-bbc6f24d53fe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">LTS:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="363" width="33" height="20" uuid="0ac07df0-30a4-458c-817b-a19a6e0e6494">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Firma:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="350" y="343" width="50" height="20" uuid="768e2211-0df1-4e67-a945-78438039c194">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Matrícula:</style>]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="7" y="91" width="38" height="17" uuid="41182fc5-8e5b-47f8-ba97-2c0047dd53cf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Horario:</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="331" y="91" width="218" height="17" uuid="27828181-65ba-4f4a-b519-19d2bbcc32cb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{modalidad}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="7" y="120" width="33" height="17" uuid="7a8935eb-b7de-4a5e-b472-fa4a249bcfb8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[<style pdfFontName="Helvetica-Bold">Citas:</style>]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="400" y="343" width="145" height="20" uuid="29e71734-0725-4401-baa8-e5b60666e6c6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{matriculaTrabajadorLogin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="343" width="245" height="20" uuid="73834e72-8487-4c57-9eba-0c4835d280b8"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nombreTrabajadorLogin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="91" width="235" height="17" uuid="f193e74a-8654-4d51-bdda-0211892ce181"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{citaDiaSemana}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="40" y="120" width="240" height="17" uuid="094934ec-06d7-4440-8c84-09e1e6913998"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{citas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="74" width="199" height="17" uuid="05099d5e-f0bb-433e-8028-478bf19a08b6"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fechaInicio}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

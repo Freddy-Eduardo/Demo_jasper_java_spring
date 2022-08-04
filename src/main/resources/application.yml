@@ -1,0 +1,45 @@
+server:
+  port: 8083
+  servlet:
+    contextPath: /
+spring:
+  mvc:
+      pathmatch:
+        matching-strategy: ANT_PATH_MATCHER
+  datasource:
+      platform: mariadb
+      driverClassName: org.mariadb.jdbc.Driver
+      url: jdbc:mariadb:failover://10.250.9.41:3306/ADTEDSBDQA?autoReconnect=true
+      username: ADTEDS_USER
+      password: ADT3D5_US3R
+      timeBetweenEvictionRunsMillis: 1000
+      testWhileIdle: true
+      validationQuery: SELECT 1
+      hikari:
+        maximum-pool-size: 1
+  main:
+    allow-circular-references: true
+  jpa:
+    show-sql: true
+    hibernate:
+        ddl-auto: none
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    dialect: org.hibernate.dialect.MariaDB103Dialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+            
+api:
+  usuarios: http://localhost:8083/msedsc-usuarios/api/consultarEmpleado/
+  pacientes: https://mts-qa.cloudapps.imss.gob.mx/msmts-pacientes/api/busquedanss/
+  ubicaciones: https://mts-qa.cloudapps.imss.gob.mx/msmts-pacientes/api/busquedanss/
+    
+  server:
+    name: msadt-citas
+  servlet:
+    multipart:
+      max-file-size: 6MB
+      max-request-size: 6MB
