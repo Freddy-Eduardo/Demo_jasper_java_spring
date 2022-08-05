@@ -4,6 +4,7 @@ import org.springframework.http.MediaType;
 import java.util.HashMap;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,7 +22,7 @@ import org.springframework.core.io.InputStreamResource;
 
 @RestController
 @RequestMapping("/api")
-public class CitaDeoController {
+public class CitaDemoJasperController {
 
 	@Autowired
 	private ReporteServiceAPI reporteVentasServiceAPI;
@@ -31,6 +32,9 @@ public class CitaDeoController {
 	
 	@Autowired
 	ParticipanteRepository participanteRepository;
+	
+	@Value("${secret.token}")
+	private String secretToken;
 
 	@GetMapping(path = "/download/{formato}/cita/{id}/genera/{idUsuario}")
 	public ResponseEntity<InputStreamResource> download(@PathVariable(name=  "formato" ) String formato, @PathVariable(name=  "id" ) Long id, @PathVariable(name=  "idUsuario" ) Long idUsuario) {
@@ -62,28 +66,30 @@ public class CitaDeoController {
 				.contentLength(dto.getLength()).contentType(mediaType).body(streamResource);
 	}
 	
-	@GetMapping("/askmdñm")
-	public String example(){
-		String C = null;
+	@GetMapping("/token/{text}")
+	public String tokenEncode(@PathVariable ("text") String txt){
+		String token = null;
+		
 		try {
-			C = Crypto.tokenOneHour("Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.", "hjasdhjasdasdasdqwe2133");
+			token = Crypto.tokenOneHour(txt, secretToken);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return  C;
+		
+		return token;
 	}
 	
-	@GetMapping("/decode")
-	public String decode(@RequestParam String token){
-		String DC = null;
+	@GetMapping("/decodeToken")
+	public String decodeToken(@RequestParam String token){
+		String textDecode = null;
 		try {
-			DC = Crypto.decryptToken(token , "hjasdhjasdasdasdqwe2133");
+			textDecode = Crypto.decryptToken(token , secretToken);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return DC;
+		return textDecode;
 	}
 	
 

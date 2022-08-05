@@ -36,6 +36,8 @@ api:
   usuarios: http://localhost:8083/msedsc-usuarios/api/consultarEmpleado/
   pacientes: https://mts-qa.cloudapps.imss.gob.mx/msmts-pacientes/api/busquedanss/
   ubicaciones: https://mts-qa.cloudapps.imss.gob.mx/msmts-pacientes/api/busquedanss/
+secret:
+  token: J4PgF!zod2W#7W$1O3A6
     
   server:
     name: msadt-citas
